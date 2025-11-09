@@ -2501,9 +2501,20 @@ input, select, textarea {
 
 /* Box */
 
-	.box.highlight {
-		text-align: center;
-	}
+        .box.highlight {
+                text-align: center;
+        }
+
+                .box.highlight .icon-link {
+                        color: inherit;
+                        border-bottom: none;
+                        cursor: pointer;
+                }
+
+                        .box.highlight .icon-link:hover,
+                        .box.highlight .icon-link:focus {
+                                color: inherit;
+                        }
 
 	.box.post {
 		position: relative;
@@ -2955,18 +2966,23 @@ input, select, textarea {
 
 		/* Box */
 
-			.box.highlight {
-				text-align: left;
-				position: relative;
-				padding-left: 7em;
-			}
+                        .box.highlight {
+                                text-align: left;
+                                position: relative;
+                                padding-left: 7em;
+                        }
 
-				.box.highlight i {
-					position: absolute;
-					margin: 0;
-					left: 0;
-					top: 0.25em;
-				}
+                                .box.highlight .icon-link {
+                                        position: absolute;
+                                        margin: 0;
+                                        left: 0;
+                                        top: 0.25em;
+                                        display: inline-block;
+                                }
+
+                                        .box.highlight .icon-link i {
+                                                position: static;
+                                        }
 
 			.box.post .inner {
 				margin-left: calc(20% + 2em);
